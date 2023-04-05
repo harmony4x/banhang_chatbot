@@ -1,0 +1,149 @@
+version: "2.0"
+
+nlu:
+- intent: space
+  examples: |
+    -      
+    -   
+    -  
+    -            
+    -                      
+    -    
+    -                                
+    -
+# Chào
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - chào bot
+- intent: give_role
+  examples: |
+    - Bạn làm được gì?
+    - Mình cần hỗ trợ?
+    - Bot có thể làm gì?
+    - Bot tìm khóa học này giúp mình với
+- intent: give_name
+  examples: |
+    - Mình tên [Minh Vinh](cust_name)
+    - Mình tên là tên [Huỳnh](cust_name)
+
+- intent: default_list
+  examples: |
+    - nói gì đi
+    - doqiwdkjpqwxczxc
+    - qưdqw
+    - cxvxvxozivjoizvp
+    - không có hỏi cái gì hết
+    - 70890
+    - 12321323904790580934523
+    - v5o90 tr49 0n06 7iub 95o 696o9 767
+    
+
+# Bot
+- intent: bot_challenge
+  examples: |
+    - bot
+    - are you a human?
+# Tạm biệt
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - tạm biệt
+    - chào tạm biệt bot
+    - hẹn gặp lại
+
+- intent: ask_category
+  examples: |
+    - Danh mục [Sáp Thơm](category)
+    - Danh mục [Ly Nước Bình Nước Giữ Nhiệt](category)
+    - Danh mục [Phụ Kiện Điện Thoại](category) có những sản phẩm gì?
+    - Danh mục [Whey protein tăng cơ](category)
+    
+    - Các sản phẩm  [Sáp Thơm](category) hiện có tại website?
+    - [Sáp Thơm](category) hiện có?
+    - Các sản phẩm [Ly Nước Bình Nước Giữ Nhiệt](category) hiện có tại website?
+    - [Ly Nước Bình Nước Giữ Nhiệt](category) hiện có?
+    - Các sản phẩm [Phụ Kiện Điện Thoại](category) hiện có tại website?
+    - [Phụ Kiện Điện Thoại](category) hiện có?
+
+- intent: ask_allCategory
+  examples: |
+    - [Các danh mục](allcategory) sản phẩm hiện có
+    - [Tất cả danh mục](allcategory) hiện có
+    - [Những danh mục](allcategory) đang có    
+
+
+- intent: ask_priceProduct
+  examples: |
+    - Sản phẩm [Rule1 Protein 10lbs](priceProduct) có giá là bao nhiêu?
+    - Sản phẩm [Rule1 Protein Isolate 5lbs](priceProduct) có giá là bao nhiêu?
+    - Sản phẩm [Iso HD 5lbs](priceProduct) có giá là bao nhiêu?
+    - Sản phẩm [NitroTech Gold Whey 5lbs](priceProduct) có giá là bao nhiêu?
+    - Sản phẩm [Rule1 Whey Blend 5lbs](priceProduct) có giá là bao nhiêu?
+    - Sản phẩm [Scivation X TEND PRO Whey Isolate 5lbs](priceProduct) có giá là bao nhiêu?
+    - Sản phẩm [Bulk Muscle Gainer XL 15lbs (6.8kg)](priceProduct) có giá là bao nhiêu?
+    - Sản phẩm [Whey protein](priceProduct) có giá là bao nhiêu?
+    - Sản phẩm [Mass Effect 13lbs](priceProduct) có giá là bao nhiêu?
+    - Sản phẩm [Mass Tech Extreme 2000 22lbs](priceProduct) có giá là bao nhiêu?
+    - Sản phẩm [Mutant Mass 15lbs](priceProduct) có giá là bao nhiêu?
+    - Sản phẩm [Mega Mass Pro 1350 6lbs](priceProduct) có giá là bao nhiêu?
+
+    - Sản phẩm [Rule1 Protein 10lbs](priceProduct) bao nhiêu tiền
+    - Sản phẩm [Rule1 Protein Isolate 5Lbs](priceProduct)  bao nhiêu tiền
+    - Sản phẩm [ISO HD 5Lbs	](priceProduct) bao nhiêu tiền
+    - Sản phẩm [NitroTech Gold Whey 5Lbs](priceProduct) bao nhiêu tiền
+    - Sản phẩm [Rule1 Whey Blend 5lbs](priceProduct) bao nhiêu tiền
+    - Sản phẩm [Scivation X TEND PRO Whey Isolate 5lbs](priceProduct) bao nhiêu tiền
+    - Sản phẩm [Bulk Muscle Gainer XL 15lbs (6.8kg)](priceProduct) bao nhiêu tiền
+    - Sản phẩm [Whey protein](priceProduct) bao nhiêu tiền
+    - Sản phẩm [Mass Effect 13Lbs](priceProduct) bao nhiêu tiền
+    - Sản phẩm [Mass Tech Extreme 2000 22Lbs](priceProduct) bao nhiêu tiền
+    - Sản phẩm [Mutant Mass 15Lbs](priceProduct) bao nhiêu tiền
+    - Sản phẩm [Mega Mass Pro 1350 6Lbs](priceProduct) bao nhiêu tiền
+
+
+
+- intent: ask_checkQty
+  examples: |
+    - Sản phẩm [Rule1 Protein 10lbs](quantity) còn hàng không
+    - Sản phẩm [Rule1 Protein Isolate 5lbs](quantity) còn hàng hay không
+    - Sản phẩm [Iso HD 5lbs](quantity) còn hàng hay không
+    - Sản phẩm [NitroTech Gold Whey 5lbs](quantity) còn hàng hay không
+    - Sản phẩm [Rule1 Whey Blend 5lbs](quantity) còn hàng hay không
+    - Sản phẩm [Scivation X TEND PRO Whey Isolate 5lbs](quantity) còn hàng hay không
+    - Sản phẩm [Bulk Muscle Gainer XL 15lbs (6.8kg)](quantity) còn hàng hay không
+    - Sản phẩm [Whey protein](quantity) còn hàng hay không
+    - Sản phẩm [Mass Effect 13lbs](quantity) còn hàng hay không
+    - Sản phẩm [Mass Tech Extreme 2000 22lbs](quantity) còn hàng hay không
+    - Sản phẩm [Mutant Mass 15lbs](quantity) còn hàng hay không
+    - Sản phẩm [Mega Mass Pro 1350 6lbs](quantity) còn hàng hay không
+
+    - Sản phẩm [Rule1 Protein 10lbs](quantity) còn hàng hay không
+    - Sản phẩm [Rule1 Protein Isolate 5lbs](quantity)  còn hàng hay không
+    - Sản phẩm [ISO HD 5Lbs	](quantity) còn hàng hay không
+    - Sản phẩm [NitroTech Gold Whey 5lbs](quantity) còn hàng hay không
+    - Sản phẩm [Rule1 Whey Blend 5lbs](quantity) còn hàng hay không
+    - Sản phẩm [Scivation X TEND PRO Whey Isolate 5lbs](quantity) còn hàng hay không
+    - Sản phẩm [Bulk Muscle Gainer XL 15lbs (6.8kg)](quantity) còn hàng hay không
+    - Sản phẩm [Whey protein](quantity) còn hàng hay không
+    - Sản phẩm [Mass Effect 13Lbs](quantity) còn hàng hay không
+    - Sản phẩm [Mass Tech Extreme 2000 22Lbs](quantity) còn hàng hay không
+    - Sản phẩm [Mutant Mass 15Lbs](quantity) còn hàng hay không
+    - Sản phẩm [Mega Mass Pro 1350 6Lbs](quantity) còn hàng hay không
+
+
+    - Cho mình hỏi shop còn bán sản phẩm [Rule1 Protein 10lbs](quantity)
+
+    - Cho mình hỏi shop còn bán sản phẩm [Rule1 Protein 10lbs](quantity)
+    - Cho mình hỏi shop còn bán sản phẩm [Mega Mass Pro 1350 6lbs](quantity)
+    - Cho mình hỏi shop còn bán sản phẩm [Rule1 Whey Blend 5lbs](quantity)
+    
+    - Shop có sản phẩm [Rule1 Protein 10lbs](quantity) này không nhỉ?
+    
+    
+    - Sản phẩm [Rule1 Protein 10lbs](quantity) này đã về chưa shop ơi?
+
+

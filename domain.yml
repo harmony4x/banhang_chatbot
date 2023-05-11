@@ -27,6 +27,10 @@ intents:
       use_entities: true
   - ask_checkQty:
       use_entities: true
+  - ask_multiDiscount:
+      use_entities: true
+  - ask_singleDiscount:
+      use_entities: true
 
 responses:
   utter_greet:
@@ -62,6 +66,8 @@ entities:
   - allcategory
   - priceProduct
   - quantity
+  - discount
+  - discountSingle
 
 slots:
   category:
@@ -76,10 +82,20 @@ slots:
   quantity:
     type: text
     auto_fill: true
-
+  discount:
+    type: text
+    auto_fill: true
+  discountSingle:
+    type: text
+    auto_fill: true
+  cust_name:
+    type: text
+    auto_fill: true
 
 actions:
   - action_category
   - action_allCategory
   - action_priceProduct
   - action_quantity
+  - action_multiDiscount
+  - action_discount

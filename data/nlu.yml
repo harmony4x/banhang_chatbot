@@ -27,7 +27,18 @@ nlu:
 - intent: give_name
   examples: |
     - Mình tên [Minh Vinh](cust_name)
+    - Tôi là [Vinh](cust_name)
+    - Tao là [Gấu](cust_name)
     - Mình tên là tên [Huỳnh](cust_name)
+    - [Bình](cust_name)
+    - [Cam](cust_name)
+    - [Trang](cust_name)
+    - [Kiều Trang](cust_name)
+    - [Thanh](cust_name)
+    - [Long](cust_name)
+    - [Châu](cust_name)
+    - [abc](cust_name)
+    - [xyz](cust_name)
 
 - intent: default_list
   examples: |
@@ -60,7 +71,31 @@ nlu:
     - Danh mục [Sáp Thơm](category)
     - Danh mục [Ly Nước Bình Nước Giữ Nhiệt](category)
     - Danh mục [Phụ Kiện Điện Thoại](category) có những sản phẩm gì?
-    - Danh mục [Whey protein tăng cơ](category)
+    
+    - Danh mục [Whey protein tăng cơ](category) có những sản phẩm gì?
+    - Danh mục [Whey protein tăng cơ](category) bao gồm những sản phẩm gì?
+    - Các sản phẩm thuộc danh mục [Whey protein tăng cơ](category)?
+    - Hãy cho tôi biết các sản phẩm thuộc danh mục [Whey protein tăng cơ](category) 
+    - Các sản phẩm [Whey protein tăng cơ](category) hiện có tại website?
+    
+    - Danh mục [Mass Gainer tăng cân](category) có những sản phẩm gì?
+    - Danh mục [Mass Gainer tăng cân](category) bao gồm những sản phẩm gì?
+    - Các sản phẩm thuộc danh mục [Mass Gainer tăng cân](category)?
+    - Hãy cho tôi biết các sản phẩm thuộc danh mục [Mass Gainer tăng cân](category) 
+    - Các sản phẩm [Mass Gainer tăng cân](category) hiện có tại website?
+    
+    - Danh mục [tăng sức mạnh](category) có những sản phẩm gì?
+    - Danh mục [tăng sức mạnh](category) bao gồm những sản phẩm gì?
+    - Các sản phẩm thuộc danh mục [tăng sức mạnh](category)?
+    - Hãy cho tôi biết các sản phẩm thuộc danh mục [tăng sức mạnh](category) 
+    - Các sản phẩm [tăng sức mạnh](category) hiện có tại website?
+    
+    - Danh mục [Giảm cân - Đốt mỡ](category) có những sản phẩm gì?
+    - Danh mục [Giảm cân - Đốt mỡ](category) bao gồm những sản phẩm gì?
+    - Các sản phẩm thuộc danh mục [Giảm cân - Đốt mỡ](category)?
+    - Hãy cho tôi biết các sản phẩm thuộc danh mục [Giảm cân - Đốt mỡ](category) 
+    - Các sản phẩm [Giảm cân - Đốt mỡ](category) hiện có tại website?
+    
     
     - Các sản phẩm  [Sáp Thơm](category) hiện có tại website?
     - [Sáp Thơm](category) hiện có?
@@ -74,6 +109,10 @@ nlu:
     - [Các danh mục](allcategory) sản phẩm hiện có
     - [Tất cả danh mục](allcategory) hiện có
     - [Những danh mục](allcategory) đang có    
+    - [Các danh mục](allcategory) sản phẩm hiện có tại website
+    - Website có [những danh mục](allcategory) nào?
+    - Hãy cho tôi biết [các danh mục](allcategory) mà bạn hiện có.
+    - Website hiện đang có [những danh mục](allcategory) nào
 
 
 - intent: ask_priceProduct
@@ -147,3 +186,29 @@ nlu:
     - Sản phẩm [Rule1 Protein 10lbs](quantity) này đã về chưa shop ơi?
 
 
+- intent: ask_multiDiscount
+  examples: |
+    - Các sản phẩm hiện đang [giảm giá](discount) tại website?
+    - Hện tại website đang có sản phẩm [giảm giá](discount) nào không?
+    - Không biết hiện đang có chương trình [giảm giá](discount) tại website
+    - Có sản phẩm nào đang [giảm giá](discount) không?
+    
+
+- intent: ask_singleDiscount
+  examples: |
+    - Sản phẩm [Rule1 Protein 10lbs](discountSingle) có giảm giá không
+    - Sản phẩm [Rule1 Protein Isolate 5Lbs](discountSingle)  có giảm giá không
+    - Sản phẩm [ISO HD 5Lbs	](discountSingle) có giảm giá không
+    - Sản phẩm [NitroTech Gold Whey 5Lbs](discountSingle) có giảm giá không
+    - Sản phẩm [Rule1 Whey Blend 5lbs](discountSingle) có giảm giá không
+    - Sản phẩm [Scivation X TEND PRO Whey Isolate 5lbs](discountSingle) có giảm giá không
+    - Sản phẩm [Bulk Muscle Gainer XL 15lbs (6.8kg)](discountSingle) có giảm giá không
+    - Sản phẩm [Whey protein](discountSingle) có giảm giá không
+    - Sản phẩm [Mass Effect 13Lbs](discountSingle) có giảm giá không
+    - Sản phẩm [Mass Tech Extreme 2000 22Lbs](discountSingle) có giảm giá không
+    - Sản phẩm [Mutant Mass 15Lbs](discountSingle) có giảm giá không
+    - Sản phẩm [Mega Mass Pro 1350 6Lbs](discountSingle) có giảm giá không
+    
+    
+    - Sản phẩm [Rule1 Protein 10lbs](discountSingle) có đang giảm giá không
+    - Sản phẩm [Rule1 Protein 10lbs](discountSingle) tại website có giảm giá không

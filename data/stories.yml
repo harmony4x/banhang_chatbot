@@ -33,3 +33,13 @@ stories:
   steps:
   - intent: ask_checkQty
   - action: action_quantity
+
+- story: teststory5
+  steps:
+  - intent: ask_multiDiscount
+  - action: action_multiDiscount
+
+- story: teststory5
+  steps:
+  - intent: ask_singleDiscount
+  - action: action_discount

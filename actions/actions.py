@@ -161,7 +161,7 @@ class action_quantity(Action):
             domain: "DomainDict",
     ) -> List[Dict[Text, Any]]:
         try:
-            courseVariable = tracker.get_slot("priceProduct")
+            courseVariable = tracker.get_slot("quantity")
             courseArray = []
             slugArray = []
             db = mysql.connector.connect(host="127.0.0.1", user="root", passwd="", database="banhang_laravel")

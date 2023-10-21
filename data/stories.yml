@@ -1,45 +1,47 @@
 version: "2.0"
 
 stories:
+    - story: teststory1
+      steps:
+          - intent: greet
+          - action: utter_greet
+          - intent: give_name
+          - action: utter_greet_with_name
+          - intent: bot_challenge
+          - action: utter_iamabot
+          - intent: give_role
+          - action: utter_role
+          - intent: ask_category
+          - action: action_category
+          - intent: default_list
+          - action: utter_default
 
+    - story: teststory2
+      steps:
+          - intent: ask_allCategory
+          - action: action_allCategory
 
-- story: teststory1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: give_name
-  - action: utter_greet_with_name
-  - intent: bot_challenge
-  - action: utter_iamabot
-  - intent: give_role
-  - action: utter_role
-  - intent: ask_category
-  - action: action_category
-  - intent: default_list
-  - action: utter_default
+    - story: teststory3
+      steps:
+          - intent: ask_priceProduct
+          - action: action_priceProduct
 
-- story: teststory2
-  steps:
-  - intent: ask_allCategory
-  - action: action_allCategory
+    - story: teststory4
+      steps:
+          - intent: ask_checkQty
+          - action: action_quantity
 
-- story: teststory3
-  steps:
-  - intent: ask_priceProduct
-  - action: action_priceProduct
+    - story: teststory5
+      steps:
+          - intent: ask_multiDiscount
+          - action: action_multiDiscount
 
+    - story: teststory5
+      steps:
+          - intent: ask_singleDiscount
+          - action: action_discount
 
-- story: teststory4
-  steps:
-  - intent: ask_checkQty
-  - action: action_quantity
-
-- story: teststory5
-  steps:
-  - intent: ask_multiDiscount
-  - action: action_multiDiscount
-
-- story: teststory5
-  steps:
-  - intent: ask_singleDiscount
-  - action: action_discount
+    - story: teststory6
+      steps:
+          - intent: ask_allCategory
+          - action: action_allCategory
